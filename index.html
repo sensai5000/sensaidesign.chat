@@ -4,14 +4,21 @@
 		<meta charset="utf-8">
 	  	<script type="text/javascript" src="https://cdn.illusion.ai/illusion.min.js"></script>
 	  	<style>
-	  		.my_chat{
-
+	  		
+.footer{
+   height: 120px;
+  margin-top: -120px;
+  background-color:#F6F6F6;
+  background-image:url("https://www.toptal.com//designers/subtlepatterns/patterns/playstation-pattern.png");
+  background-repeat:repeat;
+  background-size:150px;
+  -webkit-clip-path: polygon(0 74%, 100% 0%, 100% 100%, 0 100%);
+clip-path: polygon(0 74%, 100% 0%, 100% 100%, 0 100%);
 }
 
 body{
-  /*background:#6CCAC9;*/
-  padding:0px;
-  margin:0px;
+  background:#6CCAC9;
+  
 }
 .bar{
   width:100vw;
@@ -21,7 +28,6 @@ body{
   background-repeat:repeat;
   background-size:150px;
   clip-path: polygon(0 0, 100% 0%, 100% 38%, 0% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 38%, 0% 100%);
   margin-bottom:0;
   
 }
@@ -30,16 +36,16 @@ body{
   background-color:#80d0c7;
   min-height:100vh;
   width:100vw;
-  /*padding-top:50px;*/
+  padding-top:50px;
   overflow:hidden;
   padding-top:0;
-  
+  padding-bottom:0px;
 }
 .header-image{
   height:100px;
   width:100px;
   border-radius:100%;
-  border:4px solid #F6F6F6;
+  border:4px solid white;
   object-fit:cover;
 }
 .image-container{
@@ -225,7 +231,6 @@ copyright 2017 Illusion.ai
 
 
 
-
 	  	</style>
 	</head>
 	<body>
@@ -241,6 +246,8 @@ copyright 2017 Illusion.ai
 		  <div class="header-title">Product Designer & Creative Coder</div>
 		</div>
 		<div class="my_chat" style="margin-top:100px;"></div>
+		</div>
+		<div class="footer">
 		</div>
 
 
