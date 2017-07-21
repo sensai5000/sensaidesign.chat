@@ -147,7 +147,7 @@
        }
     ],
    coolShit: 
-    ['This is a mobile project called <a href="/coefficient_mobile.html" >CoEFFICIENT&#174;</a> for both iOS and Android.',
+    ['This is a mobile project called <a href="/coefficient_mobile.html" target="_blank" >CoEFFICIENT&#174;</a> for both iOS and Android.',
      'This is a companion app to a Web based application used by large scale retail enterprises.',
      'I was the lead interaction and visual designer.',
      '<a data-fancybox="gallery" href="https://github.com/sensai5000/sensaidesign.chat/blob/master/coef_mobile_1.png?raw=true"><img src="https://github.com/sensai5000/sensaidesign.chat/blob/master/coef_mobile_1.png?raw=true" height="300" style="object-fit:cover; border-radius:10px; margin-top:5px;"></a>',
