@@ -170,7 +170,7 @@
        }
     ],
    coolShitTwo: 
-    ['This is a web based app called <a href="" target="_blank">Blackbox Stocks&#174;.</a>',
+    ['This is a web based app called <a href="/blackbox_stocks.html" target="_blank">Blackbox Stocks&#174;.</a>',
      'The app is a fully-automated stock analysis tool for professional and non-professional traders',
      'I was brought in to redefine the UI and UX of the product, as well as help in the creation of some social features.',
      '<a data-fancybox="gallery" href="https://github.com/sensai5000/sensaidesign.chat/blob/master/Full_Layout_May2.png?raw=true"><img src="https://github.com/sensai5000/sensaidesign.chat/blob/master/Full_Layout_May2.png?raw=true" height="300" style="object-fit:cover; border-radius:10px; margin-top:5px;"></a>',
