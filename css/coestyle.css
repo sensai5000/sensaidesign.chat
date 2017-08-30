@@ -40,3 +40,43 @@ body{
   margin-top:-30px;
   margin-bottom:3rem;
 }
+.menuButton{
+  z-index:1;
+  position:absolute;
+  cursor:pointer;
+  left:20px;
+  top:20px;
+  transition:color 0.4s;
+  color:#0B5563;
+  height:50px;
+  width:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:100%;
+}
+.overlay{
+  z-index:10;
+  background-color:#62CEC9;
+  width:100vw;
+  height:100vh;
+  padding:20px;
+}
+.navLinks{
+  margin-top:50px;
+}
+.hide{
+  display:none;
+}
+.menuLink{
+  font-size:32px;
+  text-decoration:none;
+  color:#fff;
+  display:block;
+  margin-bottom:30px;
+  transition:color 0.3s;
+}
+.menuLink:hover{
+  color:#0B5563;
+
+}
