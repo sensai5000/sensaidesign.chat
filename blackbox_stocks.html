@@ -5,6 +5,7 @@
   <title>Portfolio_page_3</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 
   
       <link rel="stylesheet" href="css/bbs_style.css">
@@ -14,6 +15,14 @@
 </head>
 
 <body>
+  <div class="menuButton"><i class="fa fa-bars fa-2x"></i></div>
+<div class="overlay hide">
+  <br>
+  <div class="navLinks">
+  <a href="http://www.sensaidesign.chat/coefficient_mobile.html" class="menuLink">CoEFFICIENT Mobile</a>
+  <a href="http://www.sensaidesign.chat/blackbox_stocks.html" class="menuLink">Blackbox Stocks</a>
+  </div>
+</div>
   <div class="container">
   <div class="cui">
     <h1 class="header">Blackbox Stocks<span style="font-size:16px;">&#174;</span></h1>
@@ -33,7 +42,12 @@
   
   </div>
 </div>
-  
-  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script>
+    $(".menuButton").click(function(){
+  $(".overlay").toggle(".hide");
+  $("i").toggleClass("fa-bars fa-close");
+});
+  </script>
 </body>
 </html>
