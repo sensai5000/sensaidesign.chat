@@ -18,6 +18,14 @@
 </head>
 
 <body>
+  <div class="menuButton"><i class="fa fa-bars fa-2x"></i></div>
+<div class="overlay hide">
+  <br>
+  <div class="navLinks">
+  <a href="http://www.sensaidesign.chat/coefficient_mobile.html" class="menuLink">CoEFFICIENT Mobile</a>
+  <a href="http://www.sensaidesign.chat/blackbox_stocks.html" class="menuLink">Blackbox Stocks</a>
+  </div>
+</div>
   <!--All page content above the footer-->
 <div class="container">
   <!--Header Bar-->
@@ -75,6 +83,13 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js'></script>
 
 <script src="js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script>
+    $(".menuButton").click(function(){
+  $(".overlay").toggle(".hide");
+  $("i").toggleClass("fa-bars fa-close");
+});
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
