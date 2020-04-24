@@ -1,0 +1,359 @@
+/**General**/
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+  background:#6CCAC9;
+}
+
+/**Interactions**/
+a:hover{
+  cursor:pointer;
+}
+
+.noDecoration:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color:inherit;
+}
+
+.link:hover{
+  background-color:#0B5563;
+}
+
+/**Custom Elements**/
+.container{
+  background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+  background-color:#80d0c7;
+  min-height:100vh;
+  width:100vw;
+  padding-top:50px;
+  overflow:hidden;
+  padding-top:0;
+  padding-bottom:0px;
+}
+
+.bar{
+  width:100vw;
+  height:120px;
+  background-color:white;
+  background-image:url("https://www.toptal.com//designers/subtlepatterns/patterns/playstation-pattern.png");
+  background-repeat:repeat;
+  background-size:150px;
+  clip-path: polygon(0 0, 100% 0%, 100% 38%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 38%, 0% 100%);
+  margin-bottom:0;
+}
+
+.header-image-container{
+  width:100%;
+  height:10%;
+  display:flex;
+  justify-content:center;
+  top:-100px;
+  position:relative;
+}
+
+.header-image{
+  height:100px;
+  width:100px;
+  border-radius:100%;
+  border:4px solid #F6F6F6;
+  object-fit:cover;
+  background-color:#F6F6F6;
+}
+
+.header-container{
+  width:100%;
+  height:10%;
+  display:flex;
+  justify-content:center;
+  top:-90px;
+  position:relative;
+}
+
+.header-name{
+  font-family:"Lato";
+  font-size:24px;
+  color:white;
+}
+
+.header-title{
+  font-family:"Lato";
+  font-size:16px;
+  color:#0B5563;
+}
+
+.footer{
+  height: 120px;
+  margin-top: -120px;
+  background-color:#F6F6F6;
+  background-image:url("https://www.toptal.com//designers/subtlepatterns/patterns/playstation-pattern.png");
+  background-repeat:repeat;
+  background-size:150px;
+  -webkit-clip-path: polygon(0 74%, 100% 0%, 100% 100%, 0 100%);
+  clip-path: polygon(0 74%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.link-holder{
+  position:relative;
+  top:45%;
+}
+
+.link{
+  height:35px;
+  width:35px;
+  background-color:#6CCAC9;
+  border-radius:100%;
+  float:right;
+  /*margin-top:50px;*/
+  margin-right:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:background-color 0.5s;
+}
+.menuButton{
+  z-index:1;
+  position:absolute;
+  cursor:pointer;
+  left:20px;
+  top:20px;
+  transition:color 0.4s;
+  color:#0B5563;
+  height:50px;
+  width:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:100%;
+}
+.overlay{
+  z-index:10;
+  background-color:#62CEC9;
+  width:100vw;
+  height:100vh;
+  padding:20px;
+}
+.navLinks{
+  margin-top:50px;
+}
+.hide{
+  display:none;
+}
+.menuLink{
+  font-size:32px;
+  text-decoration:none;
+  color:#fff;
+  display:block;
+  margin-bottom:30px;
+  transition:color 0.3s;
+}
+.menuLink:hover{
+  color:#0B5563;
+
+}
+
+
+/**Illusion.ai Styles**/
+
+@keyframes font-fade {
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    color: "inherit";
+  }
+}
+
+.cui {
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 768px;
+  top:-150px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.cui,.cui * {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.cui__bubble {
+  font-family: "Lato";
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+  transform: translate3d(-96px, 0, 0);
+  transition: transform 0.75s cubic-bezier(0.68, 0.01, 0.245, 1.13) 0.3s,color 0.3s ease-in-out 0.25s,min-width 0.35s ease-in-out,min-height 0.35s ease-in-out;
+  display: inline-block;
+  line-height: 1.45em;
+  border-radius: 20px;
+  margin: 0 0 1em 0;
+  text-align: left;
+  position: relative;
+  padding: 6px 12px;
+  background: #fff;
+  color: #0B5563;
+  font-size: 19px;
+  border: none;
+  max-width: 90%;
+  min-width: 44px;
+  min-height: 12px;
+}
+
+.cui__bubble--response {
+  font-family: "Lato";
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.5s cubic-bezier(0.68, 0.01, 0.245, 1.13) 0s;
+  background: #0B5563;
+  float: right;
+  color: #fff;
+  /*background-image: linear-gradient(15deg, #FFB233 0%, #E6BA29 100%);*/
+}
+
+.cui__bubble--fade {
+  animation: font-fade .6s ease-in-out;
+}
+
+.cui__bubble--slideIn {
+  transform: translate3d(0, 0, 0);
+}
+
+.cui__bubble--typing {
+  color: transparent;
+  max-height: calc(1em + 16px);
+  max-width: 44px;
+  white-space: none;
+}
+
+.cui__bubble--typing:before {
+  content: '...';
+  color: #000;
+}
+
+.cui__bubble--embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cui__bubble--embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cui__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 148px 0;
+}
+
+.cui__list__item {
+  padding: 0 1em;
+  margin: 0;
+  overflow: hidden;
+}
+
+.cui__responses {
+  position: absolute;
+  text-align: center;
+  padding: 6px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+
+.cui__responses .cui__bubble {
+  margin: 12px 6px;
+  cursor: pointer;
+  float: none;
+}
+
+.cui__answers__placeholder:before {
+  content: 'Type and hit RETURN...';
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.cardousel {
+  max-height: 220px;
+  overflow: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: 4px -12px 0px -2px;
+}
+
+.cardousel .card {
+  text-overflow: ellipsis;
+  border: 1px solid #eee;
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 3px;
+  margin-right: 8px;
+  overflow: hidden;
+  padding: 6px;
+  width: 248px;
+}
+
+.card-base{
+  background-color:#ffffff;
+  width:360px;
+  border-radius:4px;
+  padding-bottom: 1px;
+  transition: background-color .2s;
+  margin-right:16px;
+  margin-bottom:16px;
+
+}
+.card-base:hover{
+  background-color: #E6EEEF;
+
+
+}
+a{
+  text-decoration:none;
+}
+.card-title{
+  padding-left:16px;
+  font-size:18px;
+  color:#0B5563;
+  font-weight: bold;
+  font-family: 'Lato';
+  margin-top: 8px;
+  margin-bottom:22px;
+
+}
+.card-subtitle{
+  font-family:"Lato";
+  font-size:14px;
+  color:#0B5563;
+  opacity:0.6;
+  padding-left:16px;
+  margin-top:-16px;
+  margin-bottom:16px;
+
+}
+.image-holder{
+
+}
+.card-image{
+  width:360px;
+  height:240px;
+  margin:auto;
+
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
