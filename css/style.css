@@ -176,6 +176,9 @@ a:visited {
   margin: 0 auto;
   max-width: 768px;
   top:-150px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
 }
 
 .cui,.cui * {
@@ -305,5 +308,52 @@ a:visited {
   width: 248px;
 }
 
+.card-base{
+  background-color:#ffffff;
+  width:360px;
+  border-radius:4px;
+  padding-bottom: 1px;
+  transition: background-color .2s;
+  margin-right:16px;
+  margin-bottom:16px;
+
+}
+.card-base:hover{
+  background-color: #E6EEEF;
 
 
+}
+a{
+  text-decoration:none;
+}
+.card-title{
+  padding-left:16px;
+  font-size:18px;
+  color:#0B5563;
+  font-weight: bold;
+  font-family: 'Lato';
+  margin-top: 8px;
+  margin-bottom:22px;
+
+}
+.card-subtitle{
+  font-family:"Lato";
+  font-size:14px;
+  color:#0B5563;
+  opacity:0.6;
+  padding-left:16px;
+  margin-top:-16px;
+  margin-bottom:16px;
+
+}
+.image-holder{
+
+}
+.card-image{
+  width:360px;
+  height:240px;
+  margin:auto;
+
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
